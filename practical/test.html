@@ -9,15 +9,6 @@
   box-sizing: border-box;
 }
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-/* Style the header */
-header {
-  font-size: 25px;
-  color: black;
-}
 
 /* Create two columns/boxes that floats next to each other */
 nav {
@@ -28,58 +19,28 @@ nav {
   padding: 20px;
 }
 
-
-
-article {
-  float: left;
-  padding: 20px;
-  width: 32%;
-  background-color: #f1f1f1;
-  height: 300px; /* only for demonstration, should be removed */
-}
-aside {
- background-color: #d4d4d4;
+ aside {
+ background-color: white;
   float: left;
   padding: 20px;
   width: 32%;
    height: 300px; /* only for demonstration, should be removed */
 }
-/* Clear floats after the columns */
-section:after {
- background-color: #d4d4d4;
-  content: "";
-  display: table;
-  clear: both;
-}
 
-/* Style the footer */
-footer {
-  background-color: #777;
-  padding: 10px; 
-  text-align: center; 
-  color: white;
-}
-
-/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
-@media (max-width: 600px) {
-  nav, article,aside {
-    width: 100%;
-    height: auto;
-  }
-}
 </style>
 </head>
 <body>
 
 
-<header>
-<img src="logo.jpg" alt="logo" width="75" hight="75" >
-  <h2><center> Add Employee Detail</center></h2>
-</header>
-
+	<header>
+		<img src="logo.jpg" alt="logo" width="75" hight="75" >
+	</header>
+<hr>
 	<section>
-	<nav>
-	First name:<br>
+	 <h2><center> Add Employee Detail</center></h2>
+	
+		<nav>
+		First name:<br>
 	<input type="text" name="firstname">
 	<br><br>
 	Experiance <input type="text" name="firstname">
@@ -90,18 +51,47 @@ footer {
    <input type="checkbox"  > Python <br>
   
   </nav>
-  
-  <article>
-   Last Education :<br>
+  <nav style="border-left:dotted;">
+ 
+  Last Education :<br>
    
   <input type="radio" name="color" value="blue">B.E
   <input type="radio" name="color" value="red">M.E
   <input type="radio" name="color" value="red">B.C.A<br>
   <input type="radio" name="color" value="red">Deploma
-  </article>
   
-   <aside>
-  <h3> Notice Board </h3><br>
+ <br>
+  <br>
+		
+		<br>
+		<address style="border:dotted;">
+		<p>Contact Detail</p> 
+			Email:
+			<input type="text" >
+			<br>
+			Name:
+			<input type="text" >
+			<br>
+			Skype:
+			<input type="text" >
+			<br>
+			<br>
+  </address
+  >
+  <br>
+  <br>
+ </nav>
+
+</section>
+<aside>
+  <h3> 
+  <font face="arial,helvetica" , size=6 , color=red > N </font>
+	<font face="arial,helvetica" , size=5 , color=yellow > o </font>
+	<font face="arial,helvetica" , size=6 , color=blue > T </font>
+	<font face="arial,helvetica" , size=6 , color=green > i </font>
+	<font face="arial,helvetica" , size=6 , color=red > C </font>
+	<font face="arial,helvetica" , size=5 , color=blue > e </font>
+	</h3><br>
  	<ul>
 									<li>Point-1
 											<ol type="I">
@@ -120,14 +110,6 @@ footer {
 										
 	</ul>
   </aside>
-</section>
-
-<footer>
-  <p></p>
-</footer>
-<after>
-<p></p>
-</after>
 
 </body>
 </html>
