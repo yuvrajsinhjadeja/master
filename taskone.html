@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Bootstrap Example</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet"
+	href="footer.css">
+	<link rel="stylesheet"
+	href="actioncard.css">
+	<link rel="stylesheet"
+	href="colors.css">
+	<link rel="stylesheet"
+	href="navbar.css">
+	<link rel="stylesheet"
+	href="slidenavbar.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+	
+	<div class="row  visible-sm visible-md visible-lg hidden-xs  ">
+		<nav class="navbar navbar-inverse ">
+			<div class="container-fluid nav"> 
+				<div class="navbar-header ">
+					<a class="navbar-brand" href="">Start bootstrap</a>
+				</div>
+
+				<ul class="nav navbar-nav  navbar-right">
+					<li class="active"><a href="#">Home</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Service</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</div>
+		</nav>
+	</div>
+	<div class="row container visible-xs ">
+		<div class="navbar navbar-inverse navbar-header ">
+			<a class="navbar-brand" href="">Start bootstrap</a>
+		</div>
+		<div id="mySidenav" class="sidenav">
+
+
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<a href="#">Home</a>
+			<a href="#">About</a>
+			<a href="#">Services</a>
+			<a href="#">Contact</a>
+
+		</div>
+		<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+		<script>
+			function openNav() {
+				document.getElementById("mySidenav").style.width = "250px";
+			}
+
+			function closeNav() {
+				document.getElementById("mySidenav").style.width = "0";
+			}
+		</script>
+	</div>
+
+
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-8">
+				<div class="jumbotron container-fluid text-center">
+					<div class="page-header">
+						<h1>900 x 400</h1>      
+					</div>
+
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<h1 class="text-success">Business Name or Tagline</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+				</p>
+				<h3>
+
+					<a href="#" class="btn btn-primary">Call to Action</a>
+				</h3>
+			</div>
+		</div>
+
+
+		<div class="row">
+			<div class="card col-sm-12">
+				<nav class="navbar actioncard">
+					<div class="container-fluid"> 
+						<p class="text-center">this call to action card is a great place to showcase some important or display  a clever tag line</p>
+					</div>
+				</nav>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-4">
+				<div class="panel panel-default">
+					<div class="panel-body"><h2>Card One</h2></div>
+					<div class="panel-body"><p> With supporting text below as a natural lead-in to additional contentWith supporting text below as a natural lead-in to additional content.</p></div>
+					<div class="panel-footer"><a href="#" class="btn btn-primary">More info</a></div>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<div class="panel panel-default">
+					<div class="panel-body"><h2>Card Two</h2></div>
+					<div class="panel-body"><p> With supporting text below as a natural lead-in to additional contentWith supporting text below as a natural lead-in to additional.</p></div>
+					<div class="panel-footer"><a href="#" class="btn btn-primary">More info</a></div>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<div class="panel panel-default">
+					<div class="panel-body"><h2>Card Three</h2></div>
+					<div class="panel-body"><p> With supporting text below as a natural lead-in to additional contentWith supporting text below as a natural lead-in to additional content.</p></div>
+					<div class="panel-footer"><a href="#" class="btn btn-primary">More info</a></div>
+				</div>
+			</div>			
+		</div>
+			<!-- <div class="row">
+				<div class="col-sm-4">
+					<div class="panel panel-default">
+						<div class="panel-footer"><a href="#" class="btn btn-primary">More info</a></div>
+					</div>
+				</div>	
+				<div class="col-sm-4">
+					<div class="panel panel-default">
+						<div class="panel-footer"><a href="#" class="btn btn-primary">More info</a></div>
+					</div>
+				</div>	
+				<div class="col-sm-4">
+					<div class="panel panel-default">
+						<div class="panel-footer"><a href="#" class="btn btn-primary">More info</a></div>
+					</div>
+				</div>	
+
+			</div> -->
+
+		</div>
+		<br>
+	<!-- <footer class=" container-fluid text-center">
+		<p>Copyright <span class="glyphicon glyphicon-copyright-mark"></span> your website 2017</p>
+	</footer> -->
+
+
+	<footer class="container-fluid text-center footer">
+		<p>Copyright <span class="glyphicon glyphicon-copyright-mark"></span> your website 2017</p>
+	</footer>
+
+</body>
+</html>
